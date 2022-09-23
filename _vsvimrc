@@ -1,0 +1,63 @@
+"Settings
+set nu
+set rnu
+set hlsearch
+set ignorecase
+set incsearch
+set smartcase
+set scrolloff=8
+
+"Remappings
+nnoremap H :vsc Window.PreviousTab<CR>
+nnoremap L :vsc Window.NextTab<CR>
+nnoremap K :vsc Edit.QuickInfo<CR>
+vnoremap gc :vsc Edit.ToggleLineComment<CR>
+nnoremap gcc :vsc Edit.ToggleLineComment<CR><ESC>
+"nnoremap <space>ws :vsc Window.Split<CR>
+"nnoremap <space>ws vsc Window.SplitWindowHorizontally<CR>
+"nnoremap <space>ws :vsc Window.SplitWindowVertically<CR>
+
+"Control keys
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+"nnoremap <C-q> :vsc File.Close<CR>
+
+"Insert mode / autocomplete
+inoremap <A-l> <Tab>
+
+"GoTo Remap
+nnoremap gr :vsc Edit.FindAllReferences<CR>
+"nnoremap gi :vsc Edit.GoToImplementation<CR>
+nnoremap gi `.a
+nnoremap gp :vsc Edit.PeekDefinition<CR>
+"nnoremap gm :vsc Edit.NextMethod<CR>
+"nnoremap gM :vsc Edit.PreviousMethod<CR> probably map to _gm or ctrl-down
+
+"1Key <space> Remap
+nnoremap <space>c :vsc File.Close<CR>
+nnoremap <space>e :vsc View.SolutionExplorer<CR>
+nnoremap <space>o :vsc View.Output<CR>
+nnoremap <space>t :vsc View.Terminal<CR>
+nnoremap <space>g :vsc Edit.GoToAll<CR>
+nnoremap <space>lr :source ~/_vsvimrc<CR>
+nnoremap <space>le :e ~/_vsvimrc<CR>
+nnoremap <esc> :noh<CR>
+
+"Refactor Remap
+nnoremap <space>rs :vsc Edit.SurroundWith<CR>
+vnoremap <space>rs :vsc Edit.SurroundWith<CR>
+nnoremap <space>rr :vsc Edit.Refactor.Rename<CR>
+nnoremap <space>rm :vsc Refactor.ExtractMethod<CR>
+
+"Debug Remap
+nnoremap <space>dt :vsc TestExplorer.RunAllTestsInContext<CR>
+nnoremap <space>dT :vsc TestExplorer.DebugAllTestsInContext<CR>
+"nnoremap <space>db :vsc Debug.ToggleBreakpoint<CR> use F9
+
+"Additional Changes (not through vimrc)
+"<A-j> edit.lineDown
+"<A-k> edit.lineUp
+"<C-q> File.Close
+"editor.autoClosingBrackets = never
