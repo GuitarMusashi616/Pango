@@ -1,0 +1,161 @@
+{
+    "python.pythonPath": "E:\\AnacondaDONT",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.editor.enablePreview": false,
+    "explorer.confirmDelete": false,
+    "editor.semanticHighlighting.enabled": true,
+    "python.defaultInterpreterPath": "E:\\AnacondaDONT",
+    "tabnine.experimentalAutoImports": true,
+    "jupyter.sendSelectionToInteractiveWindow": false,
+    "window.zoomLevel": 2,
+    "git.confirmSync": false,
+    "Lua.telemetry.enable": true,
+    "editor.lineNumbers": "relative",
+    "editor.formatOnSave": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "window.openFoldersInNewWindow": "off",
+    "vim.leader": "<space>",
+    "vim.smartRelativeLine": true,
+    "vim.incsearch": true,
+    "vim.ignorecase": true,
+    "vim.smartcase": true,
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                ">",
+            ],
+            "after": [
+                ">",
+                "g",
+                "v",
+            ]
+        },
+        {
+            "before": [
+                "<",
+            ],
+            "after": [
+                "<",
+                "g",
+                "v",
+            ]
+        },
+        {
+            "before": [
+                "y",
+            ],
+            "after": [
+                "y",
+                "g",
+                "v",
+                "<ESC>"
+            ]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "g",
+                "c",
+            ],
+            "commands": [
+                ":vsc editor.action.commentLine"
+            ]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                ":vsc workbench.files.action.focusOpenEditorsView"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility",
+            ]
+        },
+        {
+            "before": [
+                "<ESC>",
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "<C-pageUp>"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "<C-pageDown>"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "g",
+                "h",
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "c",
+                "c",
+            ],
+            "commands": [
+                ":vsc editor.action.commentLine"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "d",
+                "t",
+            ],
+            "commands": [
+                ":vsc testing.runAll"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "c",
+            ],
+            "commands": [
+                ":vsc workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "n",
+            ],
+            "commands": [
+                ":vsc workbench.action.files.newUntitledFile"
+            ]
+        },
+    ],
+}
