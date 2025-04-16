@@ -1,3 +1,5 @@
+"Windows put this file in the directory C:\Users\<username>
+
 "Settings
 set nu
 set rnu
@@ -37,6 +39,7 @@ nnoremap gp :vsc Edit.PeekDefinition<CR>
 
 "1Key <space> Remap
 nnoremap <space>c :vsc File.Close<CR>
+nnoremap <space>fs :vsc File.SaveAll<CR>
 nnoremap <space>e :vsc View.SolutionExplorer<CR>
 nnoremap <space>o :vsc View.Output<CR>
 nnoremap <space>t :vsc View.Terminal<CR>
